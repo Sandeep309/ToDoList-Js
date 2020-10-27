@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+
+    <!-- links -->
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.0.0-alpha2-dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container-fluid p-5 text-center">
+      <h1>Sandy's Todo List</h1>
+    </header>
+
+    <section class="container p-5">
+      <form>
+        <div class="row px-md-5">
+          <div class="col-10 d-flex justify-content-center">
+            <input type="text" class="form-control rounded-0 todo_input" />
+            <button type="submit" class="btn todo_btn">
+              <i class="fas fa-plus-square"></i>
+            </button>
+          </div>
+          <div class="col-2">
+            <select name="todos" class="form-select filter_todo">
+              <option value="all" selected>All</option>
+              <option value="completed">Completed</option>
+              <option value="uncompleted">Uncompleted</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section class="container p-5 todo_container">
+      <ul class="list-group todo_list"></ul>
+    </section>
+
+    <!-- scripts -->
+    <script src="bootstrap-5.0.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="web.js"></script>
+  </body>
+</html>
