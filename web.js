@@ -15,6 +15,11 @@ function addTodo(e) {
   // Prevent form from submiting
   event.preventDefault();
 
+  if (!todoInput.value) {
+    alert("Please add item to continue");
+    return;
+  }
+
   //   Todo Div
   const todoDiv = document.createElement("div");
   todoDiv.classList.add("todo_flex");
